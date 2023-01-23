@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>How'd we do?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Sign up!</h1>
+  <p id="description">Please fill out this form with the required information</p>
+  <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+         <label id="name-label">Name: <input id="name" type="text"name="name" placeholder="Enter your full name" required/></label>
+<label id="number-label">Number: <input id="number" type="number" name="number" min="11" max="14" placeholder="Enter your phone number" required/></label>
+<label id="email-label">Email: <input id="email" type="email" name="email" placeholder="Enter your email address" required/></label>
+<label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+    </fieldset>
+    <fieldset>
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal" /> Personal Account</label>
+      <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Business Account</label>
+      <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="terms"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">EULA</a>
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="terms"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+    </fieldset>
+    <fieldset>
+      <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+      <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+      <label for="referrer">What brought you here today?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">You</option>
+            <option value="2">Your mom</option>
+            <option value="3">Your dad</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="15" placeholder="Just a little something about you"></textarea>
+        </label>
+    </fieldset>
+  <button id="submit" input type="submit" value="submit">submit</button>
+</body>
+
+</html>
